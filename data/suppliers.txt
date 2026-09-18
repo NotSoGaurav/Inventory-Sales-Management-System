@@ -1,0 +1,2 @@
+S001|ABC Supplies|9876500001|abc.supplies@gmail.com|Bhopal
+S002|City Wholesale|9876500002|city.wholesale@gmail.com|Indore

@@ -1,0 +1,10 @@
+P001|Ball Pen|Stationery|10.0|50|10|S001
+P002|Notebook|Stationery|50.0|30|5|S001
+P003|Pencil Box|Stationery|120.0|15|5|S001
+P004|USB Cable|Electronics|150.0|40|8|S002
+P005|Computer Mouse|Electronics|500.0|12|3|S002
+P006|Keyboard|Electronics|900.0|8|2|S002
+P007|Water Bottle|Accessories|250.0|25|5|S001
+P008|Backpack|Accessories|1200.0|10|3|S001
+P009|Calculator|Electronics|350.0|20|5|S002
+P010|Desk Lamp|Electronics|700.0|6|2|S002
