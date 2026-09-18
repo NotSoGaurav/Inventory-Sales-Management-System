@@ -1,5 +1,5 @@
-P001|Ball Pen|Stationery|10.0|50|10|S001
-P002|Notebook|Stationery|50.0|30|5|S001
+P001|Ball Pen|Stationery|10.0|48|10|S001
+P002|Notebook|Stationery|50.0|26|5|S001
 P003|Pencil Box|Stationery|120.0|15|5|S001
 P004|USB Cable|Electronics|150.0|40|8|S002
 P005|Computer Mouse|Electronics|500.0|12|3|S002
