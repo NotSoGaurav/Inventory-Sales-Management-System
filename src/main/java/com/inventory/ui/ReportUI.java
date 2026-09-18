@@ -10,7 +10,11 @@ import com.inventory.service.ProductService;
 import com.inventory.service.SalesService;
 
 import java.time.format.DateTimeFormatter;
-import java.util.*;
+import java.util.EnumMap;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
 
 /**
  * Console UI layer for Business Reports, Stock Analytics, and Revenue Summaries.
