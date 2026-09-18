@@ -27,3 +27,9 @@ out/
 # OS generated files
 .DS_Store
 Thumbs.db
+
+# Build artifacts and logs
+bin/
+*.class
+*.log
+data/*.log

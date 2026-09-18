@@ -32,7 +32,7 @@ public class Sale {
         this.saleId = saleId;
         this.customerId = customerId;
         this.saleDate = saleDate != null ? saleDate : LocalDateTime.now();
-        this.items = items != null ? items : new ArrayList<>();
+        this.items = items != null ? new ArrayList<>(items) : new ArrayList<>();
         this.paymentMethod = paymentMethod;
         calculateTotalAmount();
     }
@@ -66,7 +66,7 @@ public class Sale {
     }
 
     public void setItems(List<SaleItem> items) {
-        this.items = items != null ? items : new ArrayList<>();
+        this.items = items != null ? new ArrayList<>(items) : new ArrayList<>();
         calculateTotalAmount();
     }
 

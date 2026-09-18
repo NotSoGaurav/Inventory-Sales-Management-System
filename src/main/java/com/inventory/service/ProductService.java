@@ -66,7 +66,7 @@ public class ProductService {
         if (product.getSupplierId() != null && !product.getSupplierId().trim().isEmpty()) {
             InputValidator.validateNoDelimiters(product.getSupplierId(), "Supplier ID");
             String trimmedSupplierId = product.getSupplierId().trim();
-            if (!supplierRepository.existsById(trimmedSupplierId)) {
+            if (supplierRepository != null && !supplierRepository.existsById(trimmedSupplierId)) {
                 // If supplier doesn't exist, we log a warning or enforce association
                 System.out.println("[Notice] Supplier ID '" + trimmedSupplierId + "' is not currently registered in suppliers.txt.");
             }
