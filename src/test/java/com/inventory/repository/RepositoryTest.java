@@ -2,12 +2,14 @@ package com.inventory.repository;
 
 import com.inventory.enums.PaymentMethod;
 import com.inventory.enums.UserRole;
-import com.inventory.model.*;
+import com.inventory.model.Product;
+import com.inventory.model.Sale;
+import com.inventory.model.SaleItem;
+import com.inventory.model.User;
 import com.inventory.util.FileUtil;
 
 import java.time.LocalDateTime;
 import java.util.Arrays;
-import java.util.List;
 import java.util.Optional;
 
 /**
