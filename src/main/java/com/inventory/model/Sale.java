@@ -101,7 +101,7 @@ public class Sale {
         }
     }
 
-    public double calculateTotalAmount() {
+    public final double calculateTotalAmount() {
         double sum = 0.0;
         if (this.items != null) {
             for (SaleItem item : this.items) {
