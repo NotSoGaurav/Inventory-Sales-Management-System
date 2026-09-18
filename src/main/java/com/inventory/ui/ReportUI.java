@@ -30,7 +30,11 @@ public class ReportUI {
     private final Scanner scanner;
 
     public ReportUI() {
-        this(new ProductService(), new InventoryService(), new CustomerService(), new SalesService(), new Scanner(System.in));
+        this(new Scanner(System.in));
+    }
+
+    public ReportUI(Scanner scanner) {
+        this(new ProductService(), new InventoryService(), new CustomerService(), new SalesService(), scanner);
     }
 
     public ReportUI(ProductService productService, InventoryService inventoryService,

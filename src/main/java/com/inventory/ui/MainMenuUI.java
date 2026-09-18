@@ -34,7 +34,7 @@ public class MainMenuUI {
         this.inventoryUI = new InventoryUI(new InventoryService(), scanner);
         this.customerUI = new CustomerUI(new CustomerService(), scanner);
         this.salesUI = new SalesUI(new SalesService(), scanner);
-        this.reportUI = new ReportUI();
+        this.reportUI = new ReportUI(scanner);
     }
 
     public MainMenuUI(LoginUI loginUI, ProductUI productUI, InventoryUI inventoryUI,
