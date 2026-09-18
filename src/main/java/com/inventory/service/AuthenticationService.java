@@ -55,15 +55,18 @@ public class AuthenticationService {
 
         Optional<User> optUser = userRepository.findByUsername(username.trim());
         if (!optUser.isPresent()) {
+            com.inventory.util.LoggerUtil.logLoginAttempt(username, false);
             throw new ValidationException("Invalid username or password.");
         }
 
         User user = optUser.get();
         if (!user.getPassword().equals(password)) {
+            com.inventory.util.LoggerUtil.logLoginAttempt(username, false);
             throw new ValidationException("Invalid username or password.");
         }
 
         this.currentUser = user;
+        com.inventory.util.LoggerUtil.logLoginAttempt(username, true);
         return this.currentUser;
     }
 
@@ -71,6 +74,9 @@ public class AuthenticationService {
      * Ends the current session and logs out the user.
      */
     public void logout() {
+        if (this.currentUser != null) {
+            com.inventory.util.LoggerUtil.info("[AUTH] User '" + this.currentUser.getUsername() + "' logged out.");
+        }
         this.currentUser = null;
     }
 

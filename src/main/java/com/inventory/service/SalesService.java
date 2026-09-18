@@ -147,6 +147,9 @@ public class SalesService {
             throw new ValidationException("Failed to persist sale to storage.");
         }
 
+        com.inventory.util.LoggerUtil.logOperation("SALE_COMPLETED", sale.getSaleId(),
+                "Customer: " + sale.getCustomerId() + " | Total: Rs. " + sale.getTotalAmount());
+
         return sale;
     }
 
