@@ -30,7 +30,7 @@ public class AuthenticationService {
      * Seeds a default administrator account if the users file is empty,
      * ensuring immediate out-of-the-box accessibility.
      */
-    public void ensureDefaultAdmin() {
+    public final void ensureDefaultAdmin() {
         if (userRepository.findAll().isEmpty()) {
             User defaultAdmin = new User("U1", "admin", "admin123", "System Administrator", UserRole.ADMIN);
             userRepository.save(defaultAdmin);

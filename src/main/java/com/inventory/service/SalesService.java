@@ -1,10 +1,8 @@
 package com.inventory.service;
 
-import com.inventory.enums.PaymentMethod;
 import com.inventory.exception.InsufficientStockException;
 import com.inventory.exception.ProductNotFoundException;
 import com.inventory.exception.ValidationException;
-import com.inventory.model.Customer;
 import com.inventory.model.Product;
 import com.inventory.model.Sale;
 import com.inventory.model.SaleItem;
