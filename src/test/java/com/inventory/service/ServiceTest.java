@@ -1,13 +1,18 @@
 package com.inventory.service;
 
 import com.inventory.enums.PaymentMethod;
-import com.inventory.enums.StockStatus;
 import com.inventory.enums.UserRole;
 import com.inventory.exception.InsufficientStockException;
-import com.inventory.exception.ProductNotFoundException;
 import com.inventory.exception.ValidationException;
-import com.inventory.model.*;
-import com.inventory.repository.*;
+import com.inventory.model.Customer;
+import com.inventory.model.Product;
+import com.inventory.model.Sale;
+import com.inventory.model.SaleItem;
+import com.inventory.model.User;
+import com.inventory.repository.CustomerRepository;
+import com.inventory.repository.ProductRepository;
+import com.inventory.repository.SaleRepository;
+import com.inventory.repository.UserRepository;
 import com.inventory.util.FileUtil;
 
 import java.util.Arrays;
