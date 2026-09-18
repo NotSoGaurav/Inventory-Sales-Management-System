@@ -1,1 +1,2 @@
 U1|admin|admin123|System Administrator|ADMIN
+U2|cashier|cashier123|Cashier|CASHIER
